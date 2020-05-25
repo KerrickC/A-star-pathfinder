@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+        <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A* Pathfinder - Kerrick Cavanaugh</title>
+    <script type="text/javascript" src="sketch.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="margin:10px;" class="col text-center">
+        <h1>Welcome to A* PathFinder!</h1>
+        <p>Finds the shortest path to the target!</p>
+                <div class="start">
+                   <p>Starting Node Position (x,y):</p>
+                   <div class="row justify-content-center">
+                        <p>(</p>
+                        <input min="0" max="49" value="0" id="startx" type="number">
+                        <p>,</p>
+                        <input min="0" max="49" value="0" id="starty" type="number">
+                        <p>)</p>
+                   </div>
+
+                </div>
+                <div class="end">
+                   <p>Starting Node Position (x,y):</p>
+                   <div class="row justify-content-center">
+                        <p>(</p>
+                        <input min="0" max="49" value="0" id="endx" type="number">
+                        <p>,</p>
+                        <input  min="0" max="49" value="0" id="endy" type="number">
+                        <p>)</p>
+                   </div>
+
+               </div>
+               <button onclick="Route()">Begin Route</button>
+   
+        <div id="sketch-div" class="sketch-div">
+
+        </div>
+       
+
+</body>
+</html>
